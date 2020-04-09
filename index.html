@@ -3,20 +3,19 @@
     <head>
         <title> Jason Wang | Creative Thinker at Dartmouth College </title>
         <!-- external style sheet -->
-        <!-- <meta charset="UTF-8"> -->
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
         <!-- received this link to fontawesome from Sam Morton '21 -->
         <script src="https://kit.fontawesome.com/d6d7ce9c3b.js"></script>
-        <link rel="stylesheet" type="text/css" href="mystyle.css">
-
     </head>
+    '
     <body>
 
         <!-- navbar -->
         <div>
-            <nav class="primary-nav"> Navigation
+            <nav id="home" class="primary-nav"> Navigation
                 <ul class="flex-container">
+
                     <li>
-                        <!-- <li> -->
                         <a href="#about-me">About Me</a>
                     </li>
                     <li>
@@ -27,21 +26,20 @@
                     </li>
                 </ul>
             </nav>
-            
         </div>
-        <!-- everything else -->
+
+        <!-- Header/locations -->
         <div class="cover flex-container"> 
-            <!-- <div class="background flex-container"> -->
-            <!-- <div> -->
             <main>
                 <header>
                     <h1 class="page-title">Jason Wang</h1>
+
                     <ul class="flex-container">
                         <li>
                             <i class="fas fa-university"></i>
                             <h2>Hanover, NH</h2>
                             <p>
-                                Studying CS/Economics and running in circles at Dartmouth College
+                                Studying CS/Econ and running in circles at Dartmouth College
                             </p>
                         </li>
 
@@ -52,6 +50,7 @@
                                 Spending the remote term taking classes and exploring the great outdoors
                             </p>
                         </li>
+
                         <li>
                             <i class="fas fa-home"></i>
                             <h2>Honolulu, HI</h2>
@@ -60,33 +59,36 @@
                             </p>
                         </li>
                     </ul>
-                    <a class="flex-container button" href="#contact">Contact</a>
-                </header>
-                
-                
+
+                    <a class="flex-container ghost-button" href="#contact">Contact</a>
+                </header>   
             </main>
-            <!-- </div> -->
         </div>
+
+        <!-- Content -->
         <div class="section flex-container">
             <div class="spacer">
                 <h2 id="about-me">About Me</h2>
                 <p>
-                    Hey! I'm a Computer Science modified with Economics major at Dartmouth College.<br>
-                    Things I'm passionate about - running, coding, and learning about how the world workds.
+                    Hey! I'm a Computer Science modified with Economics major at Dartmouth College. I also run varsity track and cross country. <br> <br>
+                    Things I'm passionate about - running, coding, and learning about how the world works.
                 </p>
+                <br>
                 <p>
-                    <a href="/resume">Want to know more?</a>
+                    <a href="/bio">Want to know more?</a>
                 </p>
             </div>
 
             <div class="spacer">
                 <h2 id="work">Relevant Work</h2>
                 <p>
-                    To keep it simple we only offer a few metrics:<br>page views, referrers, top pages, and screen sizes.<br>
-                    These metrics will provide enough basic insights for most websites.
+                    Seattle Country Day School (2005-2011) <br>
+                    'Iolani School (2011-2018)<br>
+                    Dartmouth College (2018-2022)
                 </p>
+                <br>
                 <p>
-                    <a href="/resume" target="_blank">See our live analytics dashboard</a>
+                    <a href="/resume" target="_blank">Click here for a full resume</a>
                 </p>
             </div>
 
@@ -94,32 +96,40 @@
                 <h2 id="contact">Contact</h2>
                 <p>
                     Reach out to me directly at jwang2@outlook.com<br>
-                    Or connect with me via social media!
+                    or connect with me via social media!
                 </p>
 
                 <ul class="social-media flex-container">
                     <li>
-                        <a href="https://www.instagram.com/j.wang_/" title="Visit me on Instagram">
+                        <a href="https://www.instagram.com/j.wang_/" target="_blank" title="Visit me on Instagram">
                             <i class="fab fa-instagram-square"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://www.linkedin.com/in/jason-k-wang/" title="Visit me on LinkedIn">
+                        <a href="https://www.linkedin.com/in/jason-k-wang/" target="_blank" title="Visit me on LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="i-dont-use-facebook" title="Visit me on Facebook">
+                        <a href="i-dont-use-facebook" target="_blank" title="Visit me on Facebook">
                             <i class="fab fa-facebook-square"></i>
                         </a>
                         
                     </li>
                 </ul>
-                
             </div>
 
         </div>
 
+        <!-- Footer -->
+        <footer>
+            <p>
+                Jason Wang, 2020
+            </p>
+            <a href="https://cs52.me" target="_blank"> CS52 20S, Dartmouth College</a>
+            <br>
+            <a href="#home">back to top!</a>
+        </footer>
     </body>
 </html>

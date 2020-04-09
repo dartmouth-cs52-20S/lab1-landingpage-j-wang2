@@ -10,7 +10,7 @@ nav {
     padding: 0;
     background-color:black;
     overflow: hidden;
-    height: 50px;
+    height: 60px;
 }
 
 .primary-nav a{
@@ -21,7 +21,6 @@ nav {
     /* padding:  */
 }
 .primary-nav a:hover{
-    /* color: rgb(5, 5, 175); */
     font-weight: bold;
     text-decoration: none;
     text-align: center;
@@ -46,10 +45,7 @@ header {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    /* text-align: center; */
-    
     height: 100%;
-    /* background-image: url(stock-background.jpg); */
     background-size: cover;
 }
 
@@ -57,8 +53,8 @@ header {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    /* background-color: black; */
 }
+
 .section h2{
     text-align: center;
 }
@@ -114,26 +110,34 @@ main{
     background-size: cover;
 }
 
-a.button {
-    width: 10%;
+/* adapted from https://www.webfx.com/blog/web-design/ghost-buttons/ */
+.ghost-button {
+    display: inline-block;
     align-content: center;
-    background-color: green;
+    text-align: center;
     justify-content: center;
+    color: #fff;
+    border: 1px solid #fff;
     border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
     padding: 15px;
     margin: 20px;
-    color: white;
-    text-decoration: none;
+}
+.ghost-button:hover {
+    background-color:white;
+    color: black;
 }
 
-/* li h2{
-    text-size:
-} */
-
 .page-title{
+    text-align: center;
     padding: 50px;
     margin: 50px;
 }
+
+/* CSS for locations in header*/
 ul li{
     width: 30%;
 }
@@ -145,24 +149,19 @@ ul li i:hover{
     color: lightskyblue;
 }
 
+/* for social media widget under contact */
 .social-media{
     display: flex;
-    /* justify-content: space-around;   */
-    /* justify-content: flex-start | flex-end | center | space-between | space-around */
     align-items: center;
-    /* align-items: flex-start | flex-end | center | baseline | stretch */
     flex-direction: row;
     padding: 20px;
     margin: 20px;
 }
 .social-media li a{
     color: black;
+    font-size:2.5em;
 }
 
-/* .section div{
-    padding: 50px;
-    margin: 50px;
-} */
 div.spacer{
     padding: 20px;
     margin: 20px;
@@ -171,4 +170,39 @@ div.spacer{
 div{
     padding: 0;
     margin: 0;
+}
+footer{
+    background-color: grey;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 640px) {
+
+
+    header ul li{
+        width: 90%;
+        padding-top: 30px;
+    }
+
+    header ul.flex-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .social-media{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+    }
+    .social-media li a{
+        color: black;
+        font-size: 1em;
+    }
 }

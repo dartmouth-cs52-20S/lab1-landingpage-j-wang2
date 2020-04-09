@@ -3,64 +3,123 @@
     <head>
         <title> Jason Wang | Creative Thinker at Dartmouth College </title>
         <!-- external style sheet -->
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- <meta charset="UTF-8"> -->
+        <!-- received this link to fontawesome from Sam Morton '21 -->
+        <script src="https://kit.fontawesome.com/d6d7ce9c3b.js"></script>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+
     </head>
     <body>
 
         <!-- navbar -->
-        <nav> Navigation
-            <ul>
-                <li>
-                    <a href="#about">About Me</a>
-                </li>
-                <li>Relevant Work</li> 
-                <li>Contact</li>
-            </ul>
-        </nav>
+        <div>
+            <nav class="primary-nav"> Navigation
+                <ul class="flex-container">
+                    <li>
+                        <!-- <li> -->
+                        <a href="#about-me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#work">Relevant Work</a>
+                    </li> 
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
         <!-- everything else -->
-        <div> 
+        <div class="cover flex-container"> 
+            <!-- <div class="background flex-container"> -->
+            <!-- <div> -->
             <main>
-                <header>      
-                    <h1>Jason Wang</h1>
-                    <ul>
-                        <li>attribute 1</li>
-                        <li>attribute 2</li>
-                        <li>attribute 3</li> 
+                <header>
+                    <h1 class="page-title">Jason Wang</h1>
+                    <ul class="flex-container">
+                        <li>
+                            <i class="fas fa-university"></i>
+                            <h2>Hanover, NH</h2>
+                            <p>
+                                Studying CS/Economics and running in circles at Dartmouth College
+                            </p>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-map-pin"></i>
+                            <h2>Sedona, AZ</h2>
+                            <p>
+                                Spending the remote term taking classes and exploring the great outdoors
+                            </p>
+                        </li>
+                        <li>
+                            <i class="fas fa-home"></i>
+                            <h2>Honolulu, HI</h2>
+                            <p>
+                                Originally from Seattle, but grew up on an island in the Pacific
+                            </p>
+                        </li>
                     </ul>
+                    <a class="flex-container button" href="#contact">Contact</a>
                 </header>
-                <div>
-                    <h2>Simple</h2>
-                    <p>
-                    For easy setup, just add our 2 lines to your page and you're done!<br>
-                    By default our script supports modern frameworks like Vue, Angular and React
-                    </p>
-                    <p>
-                    <a href="https://docs.simpleanalytics.com/script?ref=simpleanalytics.com">How to install?</a>
-                    </p>
-                    <h2>Clean</h2>
-                    <p>
+                
+                
+            </main>
+            <!-- </div> -->
+        </div>
+        <div class="section flex-container">
+            <div class="spacer">
+                <h2 id="about-me">About Me</h2>
+                <p>
+                    Hey! I'm a Computer Science modified with Economics major at Dartmouth College.<br>
+                    Things I'm passionate about - running, coding, and learning about how the world workds.
+                </p>
+                <p>
+                    <a href="/resume">Want to know more?</a>
+                </p>
+            </div>
+
+            <div class="spacer">
+                <h2 id="work">Relevant Work</h2>
+                <p>
                     To keep it simple we only offer a few metrics:<br>page views, referrers, top pages, and screen sizes.<br>
                     These metrics will provide enough basic insights for most websites.
-                    </p>
-                    <p>
-                    <a href="/simpleanalytics.com" target="_blank">See our live analytics dashboard</a>
-                    </p>
-                    <h2>Friendly</h2>
-                    <p>
-                    We designed our analytics in a way that doesn't track your users.<br>
-                    We don't collect any data that’s not necessary.
-                    </p>
-                    <p>
-                    <a href="/no-tracking">We don't track people</a> ·
-                    <a href="https://docs.simpleanalytics.com/what-we-collect?ref=simpleanalytics.com">What do we collect?</a>
-                    </p>
-                </div>
-            </main>
+                </p>
+                <p>
+                    <a href="/resume" target="_blank">See our live analytics dashboard</a>
+                </p>
+            </div>
+
+            <div class="spacer">
+                <h2 id="contact">Contact</h2>
+                <p>
+                    Reach out to me directly at jwang2@outlook.com<br>
+                    Or connect with me via social media!
+                </p>
+
+                <ul class="social-media flex-container">
+                    <li>
+                        <a href="https://www.instagram.com/j.wang_/" title="Visit me on Instagram">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/jason-k-wang/" title="Visit me on LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="i-dont-use-facebook" title="Visit me on Facebook">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        
+                    </li>
+                </ul>
+                
+            </div>
+
         </div>
+
     </body>
-
-
-    <footer>
-        footer
-    </footer>
 </html>

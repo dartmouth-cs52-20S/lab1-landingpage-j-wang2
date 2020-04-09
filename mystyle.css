@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css?family=Inter);
+
+/* font styling: applies to all selectors */
+*{
+    font-family: 'Inter', sans-serif;
+    /* background-color: blue; */
+}
+nav {
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    overflow: hidden;
+    height: 50px;
+}
+
+.primary-nav a{
+    margin: 0 !important;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    /* padding:  */
+}
+.primary-nav a:hover{
+    /* color: rgb(5, 5, 175); */
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+.primary-nav li{
+    display: inline;
+}
+/* taken from in-class example */
+.primary-nav .flex-container {
+    display: flex;
+    justify-content: space-around;  
+    /* justify-content: flex-start | flex-end | center | space-between | space-around */
+    align-items: center;
+    /* align-items: flex-start | flex-end | center | baseline | stretch */
+    flex-direction: row;
+    /*flex-direction: row | row-reverse | column | column-reverse*/
+}
+
+header {
+    color: white;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* text-align: center; */
+    
+    height: 100%;
+    /* background-image: url(stock-background.jpg); */
+    background-size: cover;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* background-color: black; */
+}
+.section h2{
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    /* justify-content: flex-end; */
+    /* position:rel */
+}
+
+.full-width {
+    /* width: 100% */
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+} 
+ul.flex-container{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+ul.flex-container li{
+    display: block;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin:0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 90%;
+    align-content: center;
+}
+
+.cover {
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background-image: url(stock-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+a.button {
+    width: 10%;
+    align-content: center;
+    background-color: green;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* li h2{
+    text-size:
+} */
+
+.page-title{
+    padding: 50px;
+    margin: 50px;
+}
+ul li{
+    width: 30%;
+}
+ul li i{
+    font-size:2em; 
+}
+ul li i:hover{
+    font-size:2.5em; 
+    color: lightskyblue;
+}
+
+.social-media{
+    display: flex;
+    /* justify-content: space-around;   */
+    /* justify-content: flex-start | flex-end | center | space-between | space-around */
+    align-items: center;
+    /* align-items: flex-start | flex-end | center | baseline | stretch */
+    flex-direction: row;
+    padding: 20px;
+    margin: 20px;
+}
+.social-media li a{
+    color: black;
+}
+
+/* .section div{
+    padding: 50px;
+    margin: 50px;
+} */
+div.spacer{
+    padding: 20px;
+    margin: 20px;
+}
+
+div{
+    padding: 0;
+    margin: 0;
+}
